@@ -1,8 +1,8 @@
 function cal() {
-    const userInput = document.getElementById("text").value
+    const userInput = document.getElementById("text-area").value
 
     if (userInput.trim() === '') {
-        document.getElementById("ans").innerText = "Error";
+        document.getElementById("word-count").innerText = "Error";
     }
 
     const words = userInput.split(/\s+/)
@@ -10,5 +10,5 @@ function cal() {
     const filterWords = words.filter(word => /[a-zA-Z]+/.test(word))
     const wordCount = filterWords.length
     
-    document.getElementById("ans").innerHTML = "Word count: " + wordCount;
+    document.getElementById("word-count").innerHTML = "Word count: " + wordCount;
 }
