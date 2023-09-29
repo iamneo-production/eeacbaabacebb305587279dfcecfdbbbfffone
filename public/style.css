@@ -1,0 +1,17 @@
+body {
+    background-color: gray;
+
+}
+
+#title {
+    background-color: white;
+    width: 900px;
+    height: auto;
+    align-items: center;
+}
+
+#submit {
+    background-color: green;
+    height: 20px;
+    width: 90px;
+}
